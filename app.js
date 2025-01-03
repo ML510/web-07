@@ -129,27 +129,21 @@ const customerArray = [
     },
 
     {
-        name: "Nimal",
-        age: 12,
-        address: "Kurunegala"
+        name: "Amal",
+        age: 13,
+        address: "Ampara"
     },
 
     {
-        name: "Nimal",
-        age: 12,
-        address: "Kurunegala"
+        name: "Kamal",
+        age: 14,
+        address: "Badulla"
     },
 
     {
-        name: "Nimal",
-        age: 12,
-        address: "Kurunegala"
-    },
-
-    {
-        name: "Nimal",
-        age: 12,
-        address: "Kurunegala"
+        name: "Sunil",
+        age: 15,
+        address: "Rathnapura"
     }
 ]
 
@@ -166,6 +160,35 @@ function addCustomer() {
     })
 
     console.log("Add Customer");
+}
+
+function showTable() {
+
+    let customerTable = document.getElementById("customertable");
+
+    let tablebody = `<tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Address</th>
+                     </tr>`;
+
+    customerArray.forEach(data => {
+
+        tablebody += `<tr>
+                            <td>${data.name}</td>
+                            <td>${data.age}</td>
+                            <td>${data.address}</td>
+                      </tr>`
+    })
+
+    customerTable.innerHTML = tablebody;
+
+
+
+
+    console.log(customerTable);
+
+
 }
 
 
