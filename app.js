@@ -87,9 +87,105 @@ sample();
 const customer = {
     name: "Mahesh",
     age: 12,
-    run: function() {
+    run: function () {
         console.log("Run...")
     }
 }
 
 customer.run();
+
+//---------------------------------------------Functions------------------------------------
+
+function sample() {
+    console.log("Heloo...");
+}
+
+//-- i --->                 ----------------------i---------------------
+let sam = function () {
+    console.log("Heloo...")
+}
+
+//-- ii --->                ----------------------ii-------------------
+let samp = () => {
+    console.log("Heloo...");
+}
+
+//-- iii --->                           ----------iii-----------------
+let sampl = () => console.log("Heloo...");
+
+
+//-- iv --->                            ----------iv---------------
+const customer01 = {
+    name: "Mahesh",
+    age: 12,
+    run: () => console.log("Heloo...")
+}
+
+const customerArray = [
+    {
+        name: "Nimal",
+        age: 12,
+        address: "Kurunegala"
+    },
+
+    {
+        name: "Nimal",
+        age: 12,
+        address: "Kurunegala"
+    },
+
+    {
+        name: "Nimal",
+        age: 12,
+        address: "Kurunegala"
+    },
+
+    {
+        name: "Nimal",
+        age: 12,
+        address: "Kurunegala"
+    },
+
+    {
+        name: "Nimal",
+        age: 12,
+        address: "Kurunegala"
+    }
+]
+
+function addCustomer() {
+
+    let name = document.getElementById("userNmae").value;
+    let age = document.getElementById("userAge").value;
+    let address = document.getElementById("userAddress").value;
+
+    customerArray.push({
+        name,
+        age,
+        address
+    })
+
+    console.log("Add Customer");
+}
+
+
+console.log(customerArray);
+
+//----------------------------------------------***********************************------------------------
+let numbers = [11, 33, 23, 56, 41, 89, 90, 65, 78];
+
+console.log(numbers.sort());
+
+console.log(numbers.push(500));
+console.log(numbers);
+
+console.log(numbers.length);
+
+console.log(numbers.pop());
+console.log(numbers);
+
+console.log(numbers.shift());
+console.log(numbers);
+
+console.log(numbers.toString());
+
