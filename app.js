@@ -30,8 +30,8 @@
 
 function calcbutton() {
 
-let num01;
-let num02;
+    let num01;
+    let num02;
 
 
     num01 = new Number(document.getElementById("num01").value);
@@ -40,17 +40,56 @@ let num02;
     let op = document.getElementById("op").value;
     let label = document.getElementById("label");
 
-    console.log(num01+num02);
+    console.log(num01 + num02);
     console.log(op);
 
     switch (op) {
-        case "+": label.innerHTML = num01+num02; break;
-        case "-": label.innerHTML = num01-num02; break;
-        case "*": label.innerHTML = num01*num02; break;
-        case "/": label.innerHTML = num01/num02; break;
+        case "+": label.innerHTML = num01 + num02; break;
+        case "-": label.innerHTML = num01 - num02; break;
+        case "*": label.innerHTML = num01 * num02; break;
+        case "/": label.innerHTML = num01 / num02; break;
     }
 
 }
 
+//---------------------------------------------------------------------------------------------------------
 
+function click9() {
+    document.getElementById("n01").value = 9;
 
+}
+
+function click8() {
+    document.getElementById("n01").value = 8
+
+}
+
+//--------------------------------------------------------------------------------------------------
+
+function ab(x, y) {
+    return x + y;
+}
+
+let num = ab(10, 20);
+
+console.log(num);
+
+//------------------------------------------------------------------------------------------------
+
+function sample() {
+    console.log("heloo");
+}
+
+sample();
+
+//--------------------------------------------------------------------------------------------
+
+const customer = {
+    name: "Mahesh",
+    age: 12,
+    run: function() {
+        console.log("Run...")
+    }
+}
+
+customer.run();
