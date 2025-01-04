@@ -159,6 +159,8 @@ function addCustomer() {
         address
     })
 
+    showTable();
+
     console.log("Add Customer");
 }
 
